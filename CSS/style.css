@@ -1,40 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
+    margin: 16px;
+    padding: 16px;
     font-family: Arial, sans-serif;
-    margin: 16;
-    padding: 8;
+    background-image:url('Assets/company.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #e9e3d4;
 }
 
 header {
-    color: black;
-    padding: 1em 0;
+    color: white;
+    padding: 4px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(16px);
+    background-blend-mode: overlay;
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    align-self: center;
+    color: white;
+}
+
+.logo {
+    margin: 16px;
+}
+
+.logo img {
+    height: 72px; /* Adjust logo size */
+    border-radius: 12px;
+    border: black 1px solid;
 }
 
 nav {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 8px;
+    padding: 8px;
+    
+}
+
+nav ul {
+    list-style: none;
+    margin: 8px;
+    padding: 8px;
+}
+
+nav li {
+    display: inline-block;
+    
 }
 
 nav a {
-    background-color: #2fa71c;
-    color: whitesmoke;
-    margin: 0 16px;
+    color: #fff;
+    text-decoration: none;
+    margin: 12px;
     padding: 12px;
-    border-radius: 8px;
-
+    border-radius: 12px;
 }
 
-main {
-    padding: 20px;
+nav > ul > li :hover {
+    background-color: #4e351e;
 }
+
+#about {
+    color: #f7f6e3;
+    border-radius: 20px;
+    margin: 16px;
+    padding: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(16px);
+    background-blend-mode: overlay;
+    background-image:url('Assets/company.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#about h2 {
+    margin-top: 0;
+}
+
+#about p {
+    margin-bottom: 20px;
+}
+
+#services { 
+    color: #f7f6e3;
+    border-radius: 20px;
+    margin: 16px;
+    padding: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(16px);
+    background-blend-mode: overlay;
+    background-image:url('Assets/company.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#services h2 {
+    margin-top: 0;
+}
+
+#services p {
+    margin-bottom: 20px;
+}  
+
+#contact {
+    color: #f7f6e3;
+    border-radius: 20px;
+    margin: 16px;
+    padding: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(16px);
+    background-blend-mode: overlay;
+    background-image:url('Assets/company.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#contact h2 {    
+    margin-top: 0;
+}    
+
+#contact p {
+    margin-bottom: 20px;
+}       
 
 section {
-    margin: 20px 0;
+    margin: 16px;
+    padding: 16px;
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background-color: #052006;
-    color: white;
+    margin: 16px;
+    padding: 16px;
+    color: #f5ead1;
 }
